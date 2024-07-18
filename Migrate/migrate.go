@@ -2,7 +2,7 @@ package main
 
 import (
 	initializers "github.com/Sasvidu/cms-backend/Initializers"
-	"github.com/Sasvidu/cms-backend/models"
+	models "github.com/Sasvidu/cms-backend/Models"
 )
 
 func init() { 
