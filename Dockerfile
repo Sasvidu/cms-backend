@@ -23,6 +23,7 @@ COPY .env .
 RUN apk add --no-cache bash && \
     echo "#!/bin/bash" > /app/entrypoint.sh && \
     echo "source .env" >> /app/entrypoint.sh && \
+    echo "exec ./main" >> /app/entrypoint.sh && \
     chmod +x /app/entrypoint.sh
 
 EXPOSE 8080
