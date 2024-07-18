@@ -21,6 +21,7 @@ COPY .env .
 
 # Install bash and prepare entrypoint
 RUN apk add --no-cache bash && \
+    echo "#!/bin/bash" > /app/entrypoint.sh && \
     echo "source .env" >> /app/entrypoint.sh && \
     chmod +x /app/entrypoint.sh
 
