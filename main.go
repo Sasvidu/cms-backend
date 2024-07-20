@@ -18,9 +18,9 @@ func main() {
 
 	r.GET("/articles", controllers.GetAllArticles)
 	r.GET("/articles/:id", controllers.GetArticle)
-	r.POST("/articles", controllers.CreateArticle)
-	r.PUT("/articles/:id", controllers.UpdateArticle)
-	r.DELETE("/articles/:id", controllers.DeleteArticle)
+	r.POST("/articles/create", controllers.CreateArticle)
+	r.PUT("/articles/edit/:id", controllers.UpdateArticle)
+	r.DELETE("/articles/delete/:id", controllers.DeleteArticle)
 
 	r.Run()
 }
