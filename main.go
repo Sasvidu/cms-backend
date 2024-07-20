@@ -17,6 +17,7 @@ func main() {
 	initializers.SetupCORS(r)
 
 	r.GET("/articles", controllers.GetAllArticles)
+	r.GET("/articles/all", controllers.GetAllArticles)
 	r.GET("/articles/:id", controllers.GetArticle)
 	r.POST("/articles/create", controllers.CreateArticle)
 	r.PUT("/articles/edit/:id", controllers.UpdateArticle)

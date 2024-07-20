@@ -74,3 +74,7 @@ func DeleteArticle(c *gin.Context) {
 		c.Status(200)
 	}
 }
+
+
+  
+  
