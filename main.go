@@ -14,6 +14,8 @@ func init() {
 func main() {
 	r := gin.Default()
 
+	initializers.SetupCORS(r)
+
 	r.GET("/articles", controllers.GetAllArticles)
 	r.GET("/articles/:id", controllers.GetArticle)
 	r.POST("/articles", controllers.CreateArticle)
