@@ -9,6 +9,7 @@ import (
 func init() {
 	initializers.LoadEnvVariables() 
 	initializers.ConnectToDB()
+	initializers.ConnectFirebase()
 }
 
 func main() {
@@ -22,6 +23,9 @@ func main() {
 	r.POST("/articles/create", controllers.CreateArticle)
 	r.PUT("/articles/edit/:id", controllers.UpdateArticle)
 	r.DELETE("/articles/delete/:id", controllers.DeleteArticle)
+
+	r.POST("/users/create", controllers.CreateUser)
+	r.DELETE("/users/delete", controllers.DeleteUserByEmail)
 
 	r.Run()
 }

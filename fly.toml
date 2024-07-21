@@ -1,9 +1,9 @@
-# fly.toml app configuration file generated for cms-backend-little-firefly-3712 on 2024-07-21T01:38:44+05:30
+# fly.toml app configuration file generated for cms-backend-muddy-sea-7087 on 2024-07-21T01:49:27+05:30
 #
 # See https://fly.io/docs/reference/configuration/ for information about how to use this file.
 #
 
-app = 'cms-backend-little-firefly-3712'
+app = 'cms-backend-muddy-sea-7087'
 primary_region = 'sin'
 
 [build]
